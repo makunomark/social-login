@@ -53,6 +53,4 @@
     		}
     	  ```
 	
-	- It receives a ```Person``` object (```com.google.android.gms.plus.model.people.Person```), you can retrieve information from this as shown above.
-
-6. That's it for now for Google sign in.
+	- It receives a ```Person``` object (```com.google.android.gms.plus.model.people.Person```), you can retrieve 			information from this as shown above.
