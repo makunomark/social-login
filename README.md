@@ -18,9 +18,9 @@
   ```
 5. Now to the class that you need to implement the login, 
 	- Create a GoogleSignIn object
-    ```java	
-	private GoogleSignIn mGoogleSignIn;
-	  ```
+        ```java	
+		private GoogleSignIn mGoogleSignIn;
+	```
 	- Initialize the GoogleSignIn object
 	
 	  ```java
@@ -31,8 +31,8 @@
 	  ```java
 		if (requestCode == GoogleSignIn.RC_SIGN_IN) {
             		mGoogleSignIn.onActivityResult(requestCode, resultCode, data);
-    }
-    ```
+		}
+    	  ```
 	- Override ```onStart()``` and ```OnStop()``` methods from your class and put this lines respectively;
 	  
 	  ```java
@@ -42,7 +42,7 @@
 	- Let your class implement ```GoogleSignCallbacks``` interface	
 	
 	- That will need you to overide the method ```onGoogleSignInSuccess()```
-	  	```java
+	  ```java
 		@Override
     		public void onGoogleSignInSuccess(Person person) {
         		String personName = person.getDisplayName();
@@ -51,8 +51,8 @@
 		        Toast.makeText(getApplicationContext(), "Hi, " + personName + " :)", Toast.LENGTH_SHORT).show();
 		        Log.d("Profile info : ", personName + personPhoto + personGooglePlusProfile);
     		}
-    	  	```
-    	  
+    	  ```
+	
 	- It receives a ```Person``` object (```com.google.android.gms.plus.model.people.Person```), you can retrieve information from this as shown above.
 
 6. That's it for now for Google sign in.
