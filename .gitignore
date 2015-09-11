@@ -34,4 +34,6 @@ captures/
 # Google configuration
 google-services.json
 
+.idea/
+
 

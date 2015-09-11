@@ -9,14 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="645089c7-8880-4d54-b73e-40be9dfb9680" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/GoogleSignCallbacks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java" afterPath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="645089c7-8880-4d54-b73e-40be9dfb9680" name="Default" comment="" />
     <ignored path="social-login.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +73,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.728988">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.05831904">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -3368,8 +3361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.728988">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.05831904">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
