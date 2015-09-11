@@ -31,3 +31,7 @@ proguard/
 # Android Studio captures folder
 captures/
 
+# Google configuration
+google-services.json
+
+
