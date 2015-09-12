@@ -19,38 +19,38 @@
 5. Now to the class that you need to implement the login, 
 	- Create a GoogleSignIn object
         ```java	
-		private GoogleSignIn mGoogleSignIn;
+	private GoogleSignIn mGoogleSignIn;
 	```
+		
 	- Initialize the GoogleSignIn object
-	
-	  ```java
-		mGoogleSignIn = new GoogleSignIn(this, this);
-	  ```
-	- Override onActivityResult method from Activity Class and put this code in it
-	
-	  ```java
-		if (requestCode == GoogleSignIn.RC_SIGN_IN) {
-            		mGoogleSignIn.onActivityResult(requestCode, resultCode, data);
-		}
-    	  ```
-	- Override ```onStart()``` and ```OnStop()``` methods from your class and put this lines respectively;
+	```java
+	mGoogleSignIn = new GoogleSignIn(this, this);
+	```
 	  
-	  ```java
-		mGoogleSignIn.onStart(); and, mGoogleSignIn.onStop(); 
-	  ```
+	- Override onActivityResult method from Activity Class and put this code in it
+	```java
+	if (requestCode == GoogleSignIn.RC_SIGN_IN) {
+		mGoogleSignIn.onActivityResult(requestCode, resultCode, data);
+	}
+	```
+    	  
+	- Override `onStart()` and `OnStop()` methods from your class and put this lines respectively;
+	```java
+	mGoogleSignIn.onStart();, mGoogleSignIn.onStop(); 
+	```
 	
-	- Let your class implement ```GoogleSignCallbacks``` interface	
+	- Let your class implement `GoogleSignCallbacks` interface	
 	
-	- That will need you to overide the method ```onGoogleSignInSuccess()```
-	  ```java
-		@Override
-    		public void onGoogleSignInSuccess(Person person) {
-        		String personName = person.getDisplayName();
-        		String personPhoto = person.getImage().getUrl();
-        		String personGooglePlusProfile = person.getUrl();
-		        Toast.makeText(getApplicationContext(), "Hi, " + personName + " :)", Toast.LENGTH_SHORT).show();
-		        Log.d("Profile info : ", personName + personPhoto + personGooglePlusProfile);
-    		}
-    	  ```
+	- That will need you to overide the method `onGoogleSignInSuccess()`
+	```java
+	@Override
+	public void onGoogleSignInSuccess(Person person) {
+		String personName = person.getDisplayName();
+		String personPhoto = person.getImage().getUrl();
+		String personGooglePlusProfile = person.getUrl();		         		
+		Toast.makeText(getApplicationContext(), "Hi, " + personName + " :)", Toast.LENGTH_SHORT).show();
+		Log.d("Profile info : ", personName + personPhoto + personGooglePlusProfile);
+	}
+	```
 	
-	- It receives a ```Person``` object (```com.google.android.gms.plus.model.people.Person```), you can retrieve 			information from this as shown above.
+	- It receives a `Person` object (`com.google.android.gms.plus.model.people.Person`), you can retrieve 				information from this as shown above.
