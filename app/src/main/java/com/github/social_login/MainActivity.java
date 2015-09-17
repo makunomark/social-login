@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mGoogleSignIn = new GoogleSignIn(this, this);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
 
     }
@@ -28,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.sign_in_button:
+                mGoogleSignIn = new GoogleSignIn(this, this);
                 mGoogleSignIn.signIn();
                 break;
         }
@@ -55,12 +54,14 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
     @Override
     protected void onStart() {
         super.onStart();
-        mGoogleSignIn.onStart();
+        if(mGoogleSignIn != null)
+            mGoogleSignIn.onStart();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        mGoogleSignIn.onStop();
+        if(mGoogleSignIn != null)
+            mGoogleSignIn.onStop();
     }
 }
