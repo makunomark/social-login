@@ -10,32 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645089c7-8880-4d54-b73e-40be9dfb9680" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\appcompat_v7_23_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\mediarouter_v7_22_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_ads_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_analytics_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_appindexing_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_appinvite_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_appstate_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_base_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_cast_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_drive_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_fitness_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_games_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_gcm_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_identity_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_location_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_maps_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_nearby_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_panorama_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_plus_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_safetynet_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_vision_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_wallet_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\play_services_wearable_7_8_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\support_annotations_23_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login\.idea\libraries\support_v4_23_0_0.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social-login-library/build.gradle" afterPath="$PROJECT_DIR$/social-login-library/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social-login-library/social-login-library.iml" afterPath="$PROJECT_DIR$/social-login-library/social-login-library.iml" />
@@ -70,8 +46,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/social-login-library/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83152175">
-              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.787307">
+              <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -87,26 +63,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GoogleSignIn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="73" column="89" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3048#3049#0" expanded="true" />
-                <element signature="e#3090#3091#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleSignCallbacks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/GoogleSignCallbacks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-              <folding />
+            <state vertical-scroll-proportion="-2.5757575">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <folding>
+                <element signature="e#221#256#0" expanded="true" />
+                <element signature="e#282#317#0" expanded="true" />
+                <element signature="e#341#374#0" expanded="true" />
+                <element signature="e#436#469#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -588,6 +558,11 @@
                 <option name="description" value="Prepare com.android.support:support-v4:23.0.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportSupportV42300Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk410Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-analytics:7.8.0" />
@@ -1223,6 +1198,11 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42300Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk410Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-analytics:7.8.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAnalytics780Library" />
@@ -1829,6 +1809,11 @@
                 <option name="name" value="prepareComAndroidSupportSupportV42300Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.facebook.android:facebook-android-sdk:4.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/social-login-library" />
+                <option name="name" value="prepareComFacebookAndroidFacebookAndroidSdk410Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.google.android.gms:play-services-analytics:7.8.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/social-login-library" />
                 <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAnalytics780Library" />
@@ -1981,7 +1966,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login" value="5768895275305" />
+        <entry key="C:\Users\Marc\Google Drive\MyProjects\AndroidStudioWorkspace\social-login" value="5768895432679" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2259,8 +2244,10 @@
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-plus/7.8.0/play-services-plus-7.8.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-identity/7.8.0/play-services-identity-7.8.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-analytics/7.8.0/play-services-analytics-7.8.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-android-sdk/4.1.0/b36e9acf6235aee0c01a8bd182bfb3a8137002cd/facebook-android-sdk-4.1.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.0.0/support-v4-23.0.0.aar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-base/7.8.0/play-services-base-7.8.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar" />
                             <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.0/support-annotations-23.0.0.jar" />
                           </list>
                         </option>
@@ -2405,9 +2392,9 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/GoogleSignCallbacks.java" />
         <option value="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java" />
         <option value="$PROJECT_DIR$/social-login-library/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -2641,15 +2628,29 @@
               <option name="myItemId" value="social-login" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+              <option name="myItemId" value="social-login" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="social-login" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2867,7 +2868,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -2875,14 +2876,15 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5349594" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26136363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26136363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -2893,7 +2895,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2918,9 +2919,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="89" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="89" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2948,7 +2947,12 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#221#256#0" expanded="true" />
+            <element signature="e#282#317#0" expanded="true" />
+            <element signature="e#341#374#0" expanded="true" />
+            <element signature="e#436#469#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2973,9 +2977,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="58" column="29" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3019,7 +3021,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#221#256#0" expanded="true" />
+            <element signature="e#282#317#0" expanded="true" />
+            <element signature="e#341#374#0" expanded="true" />
+            <element signature="e#436#469#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3046,7 +3053,12 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#221#256#0" expanded="true" />
+            <element signature="e#282#317#0" expanded="true" />
+            <element signature="e#341#374#0" expanded="true" />
+            <element signature="e#436#469#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3073,41 +3085,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/GoogleSignCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="89" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3048#3049#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22185971">
           <caret line="8" column="62" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3120,6 +3101,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/GoogleSignCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23327616">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.008576329">
+          <caret line="73" column="89" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3128,10 +3127,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5757575">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding>
+            <element signature="e#221#256#0" expanded="true" />
+            <element signature="e#282#317#0" expanded="true" />
+            <element signature="e#341#374#0" expanded="true" />
+            <element signature="e#436#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/social-login-library/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83152175">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.787307">
+          <caret line="27" column="61" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
           <folding />
         </state>
       </provider>
