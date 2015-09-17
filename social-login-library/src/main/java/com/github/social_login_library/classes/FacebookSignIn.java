@@ -1,10 +1,8 @@
 package com.github.social_login_library.classes;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -12,8 +10,10 @@ import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
+import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
+import com.github.social_login_library.interfaces.FacebookSignInCallbacks;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,33 +27,31 @@ public class FacebookSignIn  {
     private CallbackManager callbackManager;
     private Activity activity;
     private JSONObject json;
+    FacebookSignInCallbacks facebookSignInCallbacks;
 
-    public FacebookSignIn(Activity activity){
+    public FacebookSignIn(FacebookSignInCallbacks facebookSignInCallbacks, Activity activity){
         this.activity = activity;
+        this.facebookSignInCallbacks = facebookSignInCallbacks;
     }
 
-    private void signIn() {
+    public void signIn() {
         callbackManager = CallbackManager.Factory.create();
         LoginManager.getInstance().logInWithReadPermissions(activity, Arrays.asList("email", "public_profile"));
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
-                        System.out.println("Facebook Login Successful!");
-                        System.out.println("Logged in user Details : ");
-                        System.out.println("--------------------------");
-                        System.out.println("User ID  : " + loginResult.getAccessToken().getUserId());
-                        System.out.println("Authentication Token : " + loginResult.getAccessToken().getToken());
+                        facebookSignInCallbacks.onFacebookSuccess(loginResult);
                     }
 
                     @Override
                     public void onCancel() {
-                        System.out.println("Facebook Login failed!!");
+                        facebookSignInCallbacks.onFacebookCancel();
                     }
 
                     @Override
                     public void onError(FacebookException e) {
-                        System.out.println("Facebook Login failed!!");
+                        facebookSignInCallbacks.onFacebookError();
                     }
                 });
     }
@@ -85,5 +83,13 @@ public class FacebookSignIn  {
         request.executeAsync();
 
         return json;
+    }
+
+    public void onPause(){
+        AppEventsLogger.deactivateApp(activity);
+    }
+
+    public void onResume(){
+        AppEventsLogger.deactivateApp(activity);
     }
 }

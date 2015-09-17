@@ -7,7 +7,7 @@ import com.facebook.login.LoginResult;
  */
 public interface FacebookSignInCallbacks {
 
-    void onSuccess(LoginResult result);
-    void onCancel();
-    void onError();
+    void onFacebookSuccess(LoginResult result);
+    void onFacebookCancel();
+    void onFacebookError();
 }

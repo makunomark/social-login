@@ -2,7 +2,11 @@
     package="com.github.social_login_library">
 
     <application android:allowBackup="true" android:label="@string/app_name">
-
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="Facebook login"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>
 
 </manifest>
