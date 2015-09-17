@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.facebook.FacebookSdk;
 import com.github.social_login_library.classes.GoogleSignIn;
 import com.github.social_login_library.interfaces.GoogleSignCallbacks;
 import com.google.android.gms.plus.model.people.Person;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(this);
         setContentView(R.layout.activity_main);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
 
