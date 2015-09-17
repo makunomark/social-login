@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.facebook.FacebookSdk;
@@ -88,14 +87,14 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
     @Override
     protected void onStart() {
         super.onStart();
-        if(mGoogleSignIn != null)
+        if (mGoogleSignIn != null)
             mGoogleSignIn.onStart();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        if(mGoogleSignIn != null)
+        if (mGoogleSignIn != null)
             mGoogleSignIn.onStop();
     }
 
@@ -104,13 +103,16 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
         super.onResume();
 
         // Logs 'install' and 'app activate' App Events.
-        mFacebookSignIn.onResume();
+        if (mFacebookSignIn != null)
+            mFacebookSignIn.onResume();
     }
+
     @Override
     protected void onPause() {
         super.onPause();
 
         // Logs 'app deactivate' App Event.
-        mFacebookSignIn.onPause();
+        if (mFacebookSignIn != null)
+            mFacebookSignIn.onPause();
     }
 }
