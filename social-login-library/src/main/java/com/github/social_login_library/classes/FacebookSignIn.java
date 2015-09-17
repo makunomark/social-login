@@ -26,6 +26,7 @@ import java.util.Arrays;
 public class FacebookSignIn  {
     private CallbackManager callbackManager;
     private Activity activity;
+    private JSONObject json;
 
     public FacebookSignIn(Activity activity){
         this.activity = activity;
@@ -57,13 +58,13 @@ public class FacebookSignIn  {
                 });
     }
 
-    public void userData() {
+    public JSONObject userData() {
         GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
             @Override
             public void onCompleted(JSONObject object, GraphResponse response) {
                 String name = null, uniqueId = null, pictureUri = null, profileLink = null;
                 try {
-                    JSONObject json = response.getJSONObject();
+                    json = response.getJSONObject();
                     json.getString("name");
                     Log.d("JSON DATA", json.toString());
                     name = json.getString("name");
@@ -82,5 +83,7 @@ public class FacebookSignIn  {
         parameters.putString("fields", "id,name,link,email,picture");
         request.setParameters(parameters);
         request.executeAsync();
+
+        return json;
     }
 }

@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645089c7-8880-4d54-b73e-40be9dfb9680" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/FacebookSignInCallbacks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java" afterPath="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java" />
     </list>
     <ignored path="social-login.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,28 +70,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FacebookSignIn.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FacebookSignIn.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35849056">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#1760#1761#0" expanded="true" />
-                <element signature="e#1853#1854#0" expanded="true" />
-                <element signature="e#2192#3192#0" expanded="true" />
-                <element signature="e#3191#3192#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#831#832#0" expanded="true" />
+                <element signature="e#1789#1790#0" expanded="true" />
+                <element signature="e#1882#1883#0" expanded="true" />
+                <element signature="e#2227#3216#0" expanded="true" />
+                <element signature="e#3215#3216#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FacebookSignInCallbacks.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FacebookSignInCallbacks.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/FacebookSignInCallbacks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3207547">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding />
             </state>
@@ -2433,8 +2430,8 @@
         <option value="$PROJECT_DIR$/social-login-library/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java" />
-        <option value="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java" />
         <option value="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/FacebookSignInCallbacks.java" />
+        <option value="$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java" />
       </list>
     </option>
   </component>
@@ -3223,6 +3220,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="89" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/FacebookSignInCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/github/social_login/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3233,35 +3246,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/GoogleSignIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="89" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/classes/FacebookSignIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35849056">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#1760#1761#0" expanded="true" />
-            <element signature="e#1853#1854#0" expanded="true" />
-            <element signature="e#2192#3192#0" expanded="true" />
-            <element signature="e#3191#3192#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+            <element signature="e#1882#1883#0" expanded="true" />
+            <element signature="e#2227#3216#0" expanded="true" />
+            <element signature="e#3215#3216#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/social-login-library/src/main/java/com/github/social_login_library/interfaces/FacebookSignInCallbacks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3207547">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
