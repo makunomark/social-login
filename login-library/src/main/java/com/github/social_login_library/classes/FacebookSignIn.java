@@ -8,6 +8,7 @@ import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
 import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.appevents.AppEventsLogger;
@@ -27,9 +28,13 @@ public class FacebookSignIn {
     private Activity activity;
     FacebookSignInCallbacks facebookSignInCallbacks;
 
-    public FacebookSignIn(FacebookSignInCallbacks facebookSignInCallbacks, Activity activity) {
-        this.activity = activity;
+    public FacebookSignIn(FacebookSignInCallbacks facebookSignInCallbacks) {
+        this.activity = (Activity)facebookSignInCallbacks;
         this.facebookSignInCallbacks = facebookSignInCallbacks;
+    }
+
+    public FacebookSignIn(){
+
     }
 
     public void signIn() {
@@ -52,6 +57,10 @@ public class FacebookSignIn {
                         facebookSignInCallbacks.onFacebookError();
                     }
                 });
+    }
+
+    public void signOut(){
+        LoginManager.getInstance().logOut();
     }
 
     public void userData() {

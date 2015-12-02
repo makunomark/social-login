@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_curved"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Please sign in to continue"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#666" />
+
+        <!--<com.google.android.gms.common.SignInButton-->
+        <!--android:id="@+id/loginButtonGoogle"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginBottom="20dp"/>-->
+        <Button
+            android:id="@+id/loginButtonGoogle"
+            android:layout_width="242dp"
+            android:layout_height="50dp"
+            android:background="@drawable/g_plus_button"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/loginButtonFacebook"
+            android:layout_width="242dp"
+            android:layout_height="50dp"
+            android:background="@drawable/facebook_button"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/loginButtonTwitter"
+            android:layout_width="242dp"
+            android:layout_height="50dp"
+            android:background="@drawable/twitter_button"
+            android:layout_marginBottom="20dp"/>
+
+        <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/loginButtonFacebook"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text=""/>-->
+
+        <!--<com.twitter.sdk.android.core.identity.TwitterLoginButton-->
+        <!--android:id="@+id/twitter_login_button"-->
+        <!--android:layout_width="242dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_centerInParent="true"/>-->
+
+    </LinearLayout>
+</RelativeLayout>

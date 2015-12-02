@@ -14,12 +14,14 @@ import com.github.social_login_library.classes.FacebookSignIn;
 import com.github.social_login_library.classes.GoogleSignIn;
 import com.github.social_login_library.interfaces.FacebookSignInCallbacks;
 import com.github.social_login_library.interfaces.GoogleSignCallbacks;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.plus.model.people.Person;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity implements GoogleSignCallbacks, View.OnClickListener, FacebookSignInCallbacks {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, FacebookSignInCallbacks {
     private GoogleSignIn mGoogleSignIn;
     private FacebookSignIn mFacebookSignIn;
 
@@ -28,23 +30,45 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(this);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.sign_in_button).setOnClickListener(this);
-        findViewById(R.id.sign_in_button_fb).setOnClickListener(this);
+        findViewById(R.id.loginButtonGoogle).setOnClickListener(this);
+        findViewById(R.id.loginButtonFacebook).setOnClickListener(this);
+        findViewById(R.id.loginButtonTwitter).setVisibility(View.GONE);
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.sign_in_button:
-                mGoogleSignIn = new GoogleSignIn(this, this);
-                mGoogleSignIn.signIn();
+            case R.id.loginButtonGoogle:
+                mGoogleSignIn = new GoogleSignIn(this);
+                gSignIn();
                 break;
-            case R.id.sign_in_button_fb:
-                mFacebookSignIn = new FacebookSignIn(this, MainActivity.this);
+            case R.id.loginButtonFacebook:
+                mFacebookSignIn = new FacebookSignIn(this);
                 mFacebookSignIn.signIn();
                 break;
         }
+    }
+
+    private void gSignIn(){
+        mGoogleSignIn.signIn(new GoogleSignCallbacks() {
+            @Override
+            public void onGoogleSignInSuccess(GoogleSignInAccount googleSignInAccount) {
+                Toast.makeText(getApplicationContext(), "Hi, "+ googleSignInAccount.getDisplayName(), Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onGoogleSignInFailure() {
+                Toast.makeText(getApplicationContext(), "Hi sign in failure", Toast.LENGTH_LONG).show();
+
+            }
+
+            @Override
+            public void onGoogleConnectionFailure(ConnectionResult connectionResult) {
+                Toast.makeText(getApplicationContext(), "Hi connection failure", Toast.LENGTH_LONG).show();
+
+            }
+        });
     }
 
     //facebook callbacks
@@ -90,19 +114,6 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
         }
     }
 
-    //Google callbacks
-
-    @Override
-    public void onGoogleSignInSuccess(Person person) {
-        String personName = person.getDisplayName();
-        String personPhoto = person.getImage().getUrl();
-        String personGooglePlusProfile = person.getUrl();
-
-        Toast.makeText(getApplicationContext(), "Hi, " + personName + " :)", Toast.LENGTH_SHORT).show();
-
-        Log.d("Profile info : ", personName + personPhoto + personGooglePlusProfile);
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -113,19 +124,6 @@ public class MainActivity extends AppCompatActivity implements GoogleSignCallbac
         }
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (mGoogleSignIn != null)
-            mGoogleSignIn.onStart();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (mGoogleSignIn != null)
-            mGoogleSignIn.onStop();
-    }
 
     @Override
     protected void onResume() {
