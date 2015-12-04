@@ -21,7 +21,7 @@ import com.google.android.gms.plus.model.people.Person;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, FacebookSignInCallbacks {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private GoogleSignIn mGoogleSignIn;
     private FacebookSignIn mFacebookSignIn;
 
@@ -45,16 +45,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.loginButtonFacebook:
                 mFacebookSignIn = new FacebookSignIn(this);
-                mFacebookSignIn.signIn();
+                fSignIn();
                 break;
         }
     }
 
-    private void gSignIn(){
+    private void gSignIn() {
         mGoogleSignIn.signIn(new GoogleSignCallbacks() {
             @Override
             public void onGoogleSignInSuccess(GoogleSignInAccount googleSignInAccount) {
-                Toast.makeText(getApplicationContext(), "Hi, "+ googleSignInAccount.getDisplayName(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Hi, " + googleSignInAccount.getDisplayName(), Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -71,47 +71,50 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-    //facebook callbacks
-    @Override
-    public void onFacebookSuccess(LoginResult result) {
-        System.out.println("Facebook Login Successful!");
-        System.out.println("Logged in user Details : ");
-        System.out.println("--------------------------");
-        System.out.println("User ID  : " + result.getAccessToken().getUserId());
-        System.out.println("Authentication Token : " + result.getAccessToken().getToken());
+    private void fSignIn() {
+        mFacebookSignIn.signIn(new FacebookSignInCallbacks() {
+            @Override
+            public void onFacebookSuccess(LoginResult result) {
+                System.out.println("Facebook Login Successful!");
+                System.out.println("Logged in user Details : ");
+                System.out.println("--------------------------");
+                System.out.println("User ID  : " + result.getAccessToken().getUserId());
+                System.out.println("Authentication Token : " + result.getAccessToken().getToken());
 
-        mFacebookSignIn.userData();
-    }
+                mFacebookSignIn.userData();
+            }
 
-    @Override
-    public void onFacebookCancel() {
-        System.out.println("Facebook Login Cancelled!!");
-    }
+            @Override
+            public void onFacebookCancel() {
+                System.out.println("Facebook Login Cancelled!!");
+            }
 
-    @Override
-    public void onFacebookError() {
-        System.out.println("Facebook Login failed!!");
-    }
+            @Override
+            public void onFacebookError() {
+                System.out.println("Facebook Login failed!!");
+            }
 
-    @Override
-    public void onFacebookUser(JSONObject object, GraphResponse response) {
-        String name = null, uniqueId = null, pictureUri = null, profileLink = null;
-        try {
-            JSONObject json = response.getJSONObject();
-            json.getString("name");
-            Log.d("JSON DATA", json.toString());
-            name = json.getString("name");
-            uniqueId = json.getString("id");
-            profileLink = json.getString("link");
-            //pictureUri = ((JSONObject) ((JSONObject) json.get("picture")).get("data")).getString("url");
-            pictureUri = "http://graph.facebook.com/"+uniqueId+"/picture?type=large";
+            @Override
+            public void onFacebookUser(JSONObject object, GraphResponse response) {
+                String name = null, uniqueId = null, pictureUri = null, profileLink = null;
+                try {
+                    JSONObject json = response.getJSONObject();
+                    json.getString("name");
+                    Log.d("JSON DATA", json.toString());
+                    name = json.getString("name");
+                    uniqueId = json.getString("id");
+                    profileLink = json.getString("link");
+                    //pictureUri = ((JSONObject) ((JSONObject) json.get("picture")).get("data")).getString("url");
+                    pictureUri = "http://graph.facebook.com/" + uniqueId + "/picture?type=large";
 //                    createUser(name, uniqueId, pictureUri, profileLink);
 
-            Toast.makeText(getApplicationContext(), "hi, "+name, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "hi, " + name, Toast.LENGTH_SHORT).show();
 
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override
@@ -119,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == GoogleSignIn.RC_SIGN_IN) {
             mGoogleSignIn.onActivityResult(requestCode, resultCode, data);
-        }else{
+        } else {
             mFacebookSignIn.onActivityResult(requestCode, resultCode, data);
         }
     }

@@ -3,6 +3,7 @@ package com.github.social_login_library.classes;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -26,35 +27,32 @@ import java.util.Arrays;
 public class FacebookSignIn {
     private CallbackManager callbackManager;
     private Activity activity;
-    FacebookSignInCallbacks facebookSignInCallbacks;
+    FacebookSignInCallbacks facebookSignInCallbacks1;
 
-    public FacebookSignIn(FacebookSignInCallbacks facebookSignInCallbacks) {
-        this.activity = (Activity)facebookSignInCallbacks;
-        this.facebookSignInCallbacks = facebookSignInCallbacks;
+    public FacebookSignIn(AppCompatActivity activity) {
+        this.activity = activity;
     }
 
-    public FacebookSignIn(){
 
-    }
-
-    public void signIn() {
+    public void signIn(FacebookSignInCallbacks facebookSignInCallbacks) {
+        this.facebookSignInCallbacks1 = facebookSignInCallbacks;
         callbackManager = CallbackManager.Factory.create();
         LoginManager.getInstance().logInWithReadPermissions(activity, Arrays.asList("email", "public_profile"));
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
-                        facebookSignInCallbacks.onFacebookSuccess(loginResult);
+                        facebookSignInCallbacks1.onFacebookSuccess(loginResult);
                     }
 
                     @Override
                     public void onCancel() {
-                        facebookSignInCallbacks.onFacebookCancel();
+                        facebookSignInCallbacks1.onFacebookCancel();
                     }
 
                     @Override
                     public void onError(FacebookException e) {
-                        facebookSignInCallbacks.onFacebookError();
+                        facebookSignInCallbacks1.onFacebookError();
                     }
                 });
     }
@@ -67,7 +65,7 @@ public class FacebookSignIn {
         GraphRequest request = GraphRequest.newMeRequest(AccessToken.getCurrentAccessToken(), new GraphRequest.GraphJSONObjectCallback() {
             @Override
             public void onCompleted(JSONObject object, GraphResponse response) {
-                facebookSignInCallbacks.onFacebookUser(object, response);
+                facebookSignInCallbacks1.onFacebookUser(object, response);
             }
         });
         Bundle parameters = new Bundle();

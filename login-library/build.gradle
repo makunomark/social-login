@@ -1,31 +1,30 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
-//ext {
-//    bintrayRepo = 'maven'
-//    bintrayName = 'social-login'
-//
-//    publishedGroupId = 'com.github.social-login'
-//    libraryName = ''
-//    artifact = 'fb-like'
-//
-//    libraryDescription = 'A wrapper for all social login (facebook, google+) functions on Android'
-//
-//    siteUrl = 'https://github.com/makunomark/social-login'
-//    gitUrl = 'https://github.com/makunomark/social-login.git'
-//
-//    libraryVersion = '0.1.0'
-//
-//    developerId = 'makunomark'
-//    developerName = 'Mark Makuno'
-//    developerEmail = 'makunomark@gmail.com'
-//
-//    licenseName = 'The Apache Software License, Version 1.0'
-//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-1.0.txt'
-//    allLicenses = ["Apache-1.0"]
-//}
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'social-login'
 
-//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+    publishedGroupId = 'com.github.social-login'
+    libraryName = 'login-library'
+    artifact = 'login-library'
+
+    libraryDescription = 'A wrapper for all social login (facebook, google+) functions on Android'
+
+    siteUrl = 'https://github.com/makunomark/social-login'
+    gitUrl = 'https://github.com/makunomark/social-login.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'makunomark'
+    developerName = 'Mark Makuno'
+    developerEmail = 'makunomark@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 1.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-1.0.txt'
+    allLicenses = ["Apache-1.0"]
+}
+
 apply plugin: 'com.google.gms.google-services'
 
 android {
@@ -57,3 +56,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-analytics:8.3.0'
     compile 'com.facebook.android:facebook-android-sdk:4.6.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
