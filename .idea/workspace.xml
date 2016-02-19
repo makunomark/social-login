@@ -7,7 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="502cdac3-d598-4ffe-a6a5-bc9f12ae355a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\copyright\profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\gradle.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\libraries\appcompat_v7_23_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\libraries\support_annotations_23_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\libraries\support_v4_23_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\runConfigurations.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\MyProjects\AndroidStudio\LumpySpace\.idea\workspace.xml" afterPath="" />
     </list>
     <ignored path="LumpySpace.iws" />
     <ignored path=".idea/workspace.xml" />
