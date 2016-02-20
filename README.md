@@ -57,5 +57,22 @@ mFacebookSignIn.signIn(new FacebookSignInCallbacks(){
 	public void onFacebook....
 });
 ```
+
+## Layouts
+You can use button layouts included in the library:
+```
+<include layout="@layout/login_buttons"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:layout_centerVertical="true"
+	android:layout_centerHorizontal="true" />
+```
+
+The button ids are:
+
+- google : loginButtonGoogle
+- facebook : loginButtonFacebook
+- twitter : loginButtonTwitter
+
 ## Current progress
 - working on loggin in with **Twitter**
