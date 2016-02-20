@@ -2,6 +2,11 @@
 
 **Lumpy Space** was made with android developers in mind. It reduces the work done to include logging in with *Google* and *FaceBook* into your application.
 
+![alt tag](Screenshot_2016-02-20-16-39-47.png?raw=true "Home page")
+![alt tag](Screenshot_2016-02-20-16-41-08.png?raw=true "Facebook login activity")
+![alt tag](Screenshot_2016-02-20-16-40-49.png?raw=true "Google account selection")
+
+
 Lets get started!
 
 ###Step 1: Include the library into you your project by including these blocks of code to your **build.gradle**
