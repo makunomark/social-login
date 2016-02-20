@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_id": "lumpyspace-52a70",
+    "project_number": "1023768700723",
+    "name": "LumpySpace"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023768700723:android:f9e0a8b9452beffc",
+        "client_id": "android:com.lsp.lumpyspace",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.lsp.lumpyspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023768700723-nlrbsf3mfmrgruo2rg0d25tf5nuncqt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lsp.lumpyspace",
+            "certificate_hash": "F703701BA69CAD4530FBF52ED9D5DC9F71E289F7"
+          }
+        },
+        {
+          "client_id": "1023768700723-lqldhdig0db82u5ebn9fq3k6c7jcltbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
