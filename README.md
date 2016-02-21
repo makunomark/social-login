@@ -45,9 +45,13 @@ mGoogleSignIn.signIn(new GoogleSignInCallbacks(){
 Get your key from [facebook.com - Facebook Developers](https://developers.facebook.com/quickstarts/?platform=android)
 
 Skip add **Add Facebook SDK to Your Project** section
+
 Follow instructions on **Add Facebook App ID** section
+
 Fill data in **Tell us about your Android project** section
+
 Finally, add your development and release key hashes
+
 Press next and scroll till end of page
 	
 Sample use
