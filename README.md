@@ -67,6 +67,20 @@ mFacebookSignIn.signIn(new FacebookSignInCallbacks(){
 });
 ```
 
+Override the `onActivityResult()` method:
+
+```
+@Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == GoogleSignIn.RC_SIGN_IN) {
+            mGoogleSignIn.onActivityResult(requestCode, resultCode, data);
+        } else {
+            mFacebookSignIn.onActivityResult(requestCode, resultCode, data);
+        }
+    }
+```
+
 ## Layouts
 You can use button layouts included in the library:
 ```
