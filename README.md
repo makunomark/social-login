@@ -11,14 +11,8 @@ Lets get started!
 
 ###Step 1: Include the library into you your project by including these blocks of code to your **build.gradle**
 ```
-repositories {
-    maven {
-        url 'https://dl.bintray.com/makunomark/maven'
-    }
-}
-
 dependencies {
-    compile 'com.lsp.library:library:1.0'
+    compile 'com.lsp.library:library:1.1.0'
 }
 ```
 
