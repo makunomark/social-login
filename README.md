@@ -12,7 +12,7 @@ Lets get started!
 ###Step 1: Include the library into you your project by including these blocks of code to your **build.gradle**
 ```
 dependencies {
-    compile 'com.lsp.library:library:1.0'
+    compile 'com.lsp.library:library:1.1.1'
 }
 ```
 
